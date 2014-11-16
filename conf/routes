@@ -1,0 +1,53 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+*       /c/update	                            AiU.update
+*       /c/reg									AiU.register
+*       /c/login								AiU.login
+*       /c/indexpage							AiU.indexPage
+*       /c/download								AiU.download
+*       /c/subscription							AiU.subscription
+*       /c/unsubscription						AiU.unsubscription
+*       /c/new									AiU.getNews
+*       /c/evaluatings							AiU.getEvaluatings
+*       /c/newinfo								AiU.getNewInfo
+*       /c/invite								AiU.invite
+*       /c/strategyinfo							AiU.getGameStrategyInfo
+*       /c/evaluatinginfo						AiU.getGameEvaluatingInfo
+*       /c/package								AiU.getPackage
+*       /c/game_play							AiU.gameplay
+*       /c/game_invite							AiU.gameinvite
+*       /c/gameinfo								AiU.getGameinfo
+*       /c/customerinfo							AiU.updateMemberInfo
+*       /c/addcomment							AiU.addComment
+*       /c/getcomment							AiU.getComment
+*       /c/packagelist							AiU.packageInfo
+*       /c/packagepay							AiU.packagePay
+*       /c/plus									AiU.plus
+*       /c/logout								AiU.logout
+*       /c/checkdigit							AiU.checkDigit
+*       /c/startpage							AiU.startPage
+*       /c/gDCount								AiU.gameDownloadCount
+*       /c/mypackage							AiU.getMyPackage
+*       /c/gameicon								AiU.getGameIcon
+*       /c/gametype								AiU.getGameType
+*       /c/newstype								AiU.getNewsType
+*       /c/gameadlist							AiU.gameCarosel
+*       /c/reg2									AiU.register2
+*       /c/userinfo								AiU.getMemberInfo
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+GET     /attachments/                      		staticDir:data/attachments
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}
+
+# Import CRUD routes
+*      /admin              module:crud
