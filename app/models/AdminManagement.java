@@ -26,7 +26,7 @@ public class AdminManagement extends Model {
 	@MaxSize(15)
 	@MinSize(5)
 	@Password
-	public String psd;
+	public String pwd;
 	
 	public Integer role;
 	

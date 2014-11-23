@@ -57,7 +57,7 @@ get_version_success=获取最新版本成功.
 carousel_name=名称
 skey=关键字(多个关键字用,分隔)
 
-crud.title=矮油互动娱乐管理平台
+crud.title=IS后台
 crud.home=主页
 crud.blank=创建
 crud.index.title=请选择一个板块编辑
