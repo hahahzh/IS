@@ -1,0 +1,55 @@
+#{extends 'CRUD/layout.html' /}
+#{set title:messages.get('crud.blank.title', type.modelName) /}
+
+<div id="crudBlank" class="${type.name}">
+
+    <h2 id="crudBlankTitle">&{'crud.blank.title', type.modelName}</h2>
+
+    <div class="objectForm">
+    #{form action:@create(), enctype:'multipart/form-data'}
+        #{crud.form /}
+        
+        <button onclick="addQuestion()" type="button">添加问题</button>
+        <fieldset>
+		<legend>可编辑的表格</legend>
+		<table id="oTable" class='question' style="background-color:#eeeeee;" bordercolor="#aaaaaa" border="1" cellpadding="0" cellpadding="2" width="100%">
+		<tbody>
+		</tbody>
+		</table>
+		</fieldset>
+		<input type="button" onClick="addQuestion();" style="font-size:16px;" value="添加问题"/>
+
+        <p class="crudButtons">
+            <input type="submit" name="_save" value="&{'crud.save', type.modelName}" />
+        </p>
+    #{/form}
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+	var count = 0;
+	var qCount = 0;
+	
+	function addQuestion(){
+		var oTable = document.getElementById("oTable");
+		var tBodies = oTable.tBodies;
+		var tbody = tBodies[0];
+		var tr = tbody.insertRow(tbody.rows.length);
+		tr.id = "tr"+count;
+		var td = tr.insertCell(0);
+		td.innerHTML = "<input type='text' placeholder='question' id='text_q_"+count+"' name='text_q_"+count+"' value='"+tr.id+"'/>&nbsp;&nbsp;<input type='button' onClick='addOption("+tr.id+","+count+");' style='font-size:16px;' value='+'/>&nbsp;&nbsp;<input type='button' onClick='delRow("+tr.id+");' style='font-size:16px;' value='-'/><br/><br/><div id='div_o_"+count+"'></div><br/>";
+		count++;
+	}
+
+	function delRow(tr_id){
+		tr_id.deleteCell(0);
+	}
+	
+	function addOption(tr_id,id){
+		var div = document.getElementById("div_o_"+id);
+		div.innerHTML += "<input type='text' placeholder='option' 'text_o_"+id+"_"+qCount+"' value='"+id+"_"+qCount+"'/><br/>";
+		qCount++;
+	}
+</script>
