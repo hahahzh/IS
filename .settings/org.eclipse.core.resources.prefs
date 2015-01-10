@@ -1,13 +1,14 @@
 eclipse.preferences.version=1
 encoding//app/utils/SendSMS.java=UTF-8
 encoding//app/views/CRUD/index.html=UTF-8
-encoding//app/views/CRUD/layout.html=GBK
+encoding//app/views/CRUD/layout.html=UTF-8
 encoding//app/views/main.html=GBK
 encoding//app/views/tags/carousel/form.html=UTF-8
 encoding//app/views/tags/customer/table.html=UTF-8
 encoding//app/views/tags/gamecarousel/form.html=UTF-8
 encoding//app/views/tags/pack/form.html=UTF-8
 encoding//crud/views/CRUD/layout.html=UTF-8
+encoding//public/html/info.html=UTF-8
 encoding//secure/views/Secure/layout.html=UTF-8
 encoding/<project>=UTF-8
 encoding/interface.txt=GBK
