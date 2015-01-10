@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title></title>
+     <!-- <link href="SurveyRazor/css/surveyq.css" rel="stylesheet" type="text/css" />
+     <link href="SurveyRazor/css/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+     <script src="SurveyRazor/SurveyRaZor.js" type="text/javascript"></script>
+      -->
+     <script src="../javascript/jquery-1.8.3.min.js" type="text/javascript"></script>
+     
+     <script src="../javascript/Json2.js" type="text/javascript"></script>
+     <script type="text/javascript">
+        $(function () {
+
+             var desc = "<p style=\"white-space: normal; background-color: rgb(255, 255, 255);\">\
+                        <span style=\"font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;\">親愛的客戶，</span>\
+                     </p>\
+                     <p style=\"white-space: normal; background-color: rgb(255, 255, 255);\">\
+                         <span style=\"font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;\">感謝您一直以來的支持與厚愛。</span>\
+                     </p>\
+                     <p style=\"white-space: normal; background-color: rgb(255, 255, 255);\">\
+                         <span style=\"font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;\">為了更好地提升我們的服務， 邀請您對我們的服務進行評價。您的評價與意見，將幫助我們提供更加優質的服務！</span>\
+                    </p>\
+                     <p style=\"white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\">\
+                         <span style=\"font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;\">請針對2014年第1季度的服務狀況進行評價</span>\
+                     </p>\
+                     <p style=\"text-align: center;\">\
+                         <span style=\"font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;\">請您配合在3月26日前回復,謝謝。收集窗口： </span>\
+                     </p>";
+             SurveyRazor.dataStore.load(data);
+             SurveyRazor.surveyRazor.options({
+                 description: desc, //描述
+               haveBgImg: false,  //启用背景图片
+                surveyTitle: "客戶滿意度調查表"
+            }).create().show();
+        });
+    </script>
+</head>
+<body style="margin: 0 auto; background-image: url(&#39;&#39;); width: 700px;">
+ee
+</body>
+</html>

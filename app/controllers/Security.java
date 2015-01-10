@@ -15,7 +15,7 @@ public class Security extends Secure.Security {
 		if(user == null){
 			return false;
 		}
-		boolean flag = user != null && user.psd.equals(password);
+		boolean flag = user != null && user.pwd.equals(password);
 		if(flag){
 			session.put("admin_id", user.id);
 			session.put("admin_name", user.name);

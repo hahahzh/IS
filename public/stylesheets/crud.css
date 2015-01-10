@@ -1,0 +1,538 @@
+/** Administration area **/
+
+#crud {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', 'Arial', 'Sans';
+	font-size: 90%;
+	color: #111;
+}
+
+/** Header **/
+
+#crud #crudHeader {
+	background: #111111;
+	padding: 10px 20px;
+}
+
+#crud #crudHeader h1 {
+	margin: 0;
+	font-weight: normal;
+}
+
+#crud #crudHeader h1 a {
+	color: gold;
+	text-decoration: none;
+}
+
+/** Breadcrumb **/
+
+#crudBreadcrumb {
+	padding: 5px 20px;
+	font-size: 80%;
+	border-bottom: 1px solid #ddd;
+}
+
+#crudBreadcrumb ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#crudBreadcrumb li {
+	display: inline;
+}
+
+#crudBreadcrumb a {
+	color: #333;
+}
+
+#crudBreadcrumb li:last-child a {
+	color: #888;
+	text-decoration: none;
+}
+#table_title {
+	background-image:url(images/table_title.png);
+	font-size:12px;
+	width: 97.1%;
+	height: 23px;
+}
+#crudListTable table{
+	border-collapse:collapse;
+	width:97.1%;
+	font-size:14px;
+	font-family: 宋体;
+}
+#crudListTable th{
+	text-align:center;
+	height:28px;
+	background-image:url(images/th.png);
+}
+#crudListTable th a{
+	color:#000000;
+}
+#crudListTable td{
+	height:30px;
+}
+#crudListTable a{
+	color:#0099cc;
+}
+#crudListTable a:hover {
+	color:#ff6600;
+}
+
+#ListTable table{
+	border-collapse:collapse;
+	width:97.1%;
+	font-size:14px;
+	font-family: 宋体;
+}
+#ListTable th{
+	text-align:center;
+	height:28px;
+	background-image:url(images/th.png);
+}
+#ListTable th a{
+	color:#000000;
+}
+#ListTable td{
+	height:30px;
+}
+#ListTable a{
+	color:#0099cc;
+}
+#ListTable a:hover {
+	color:#ff6600;
+}
+
+/** Flash message **/
+
+
+.crudFlash {
+	padding: 5px 20px;
+	border-bottom: 1px solid #ddd;
+	color: #fff;
+}
+
+.flashError {
+	background: #c00;
+	width:98%;
+	margin-left:-3px;
+}
+
+.flashSuccess {
+	background: #54BD06;
+	width:98%;
+	margin-left:-3px;
+}
+
+/** Content **/
+
+#crud #crudContent {
+	padding: 10px 20px;
+}
+
+#crud #crudContent h2 {
+	color: #333;
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+#crud #crudContent a {
+	color: #444;
+}
+
+/** Tables **/
+
+#crud #crudContent table {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-top: none;
+	border-collapse: collapse;
+}
+
+#crud #crudContent table thead tr {
+	background: #0A65AF;
+}
+
+#crud #crudContent table th {
+	color: #fff;
+	font-weight: bold;
+}
+
+#crud #crudContent table th a {
+	color: #fff;
+	font-weight: bold;
+}
+
+#crud #crudContent table th {
+	text-align: left;
+	padding: 6px 5px;
+}
+
+#crud #crudContent table td {
+	text-align: left;
+	padding: 4px 5px;
+}
+
+#crud #crudContent table td {
+	border-bottom: 1px solid #eee;
+}
+
+#crud #crudContent table tr.even {
+	background: #f9f9f9;
+}
+
+#crud #crudContent table tr:last-child td {
+	border-bottom: 1px solid #ddd;
+}
+
+.crudSortedAsc:after {
+	content: '▼';
+}
+
+.crudSortedDesc:after {
+	content: '▲';
+}
+
+/** Forms **/
+
+form {
+	margin: 0;
+}
+
+input, textarea, select {
+	font-family: 'Helvetica', 'Arial', 'Sans';
+	font-size: 12px;
+}
+
+textarea {
+	padding: 2px;
+}
+
+.objectForm {
+	border: 0px solid #;
+}
+#crudBlankTitle{
+	width:800px;
+	height:25px;
+	background-image:url(images/center_title_line.gif);
+	background-repeat:repeat-x;
+	padding:0px;
+}
+label {
+	display: block;
+	font-weight: bold;
+	width: 20%;
+	float: left;
+	color: #666;
+	cursor: pointer;
+}
+
+.crudField {
+	position: relative;
+	padding: 0px 0px 15px;
+	margin:10px 0px;
+	border-bottom: 1px solid #eee;
+	text-align:left;
+}
+.buttonField {
+	position: relative;
+}
+
+.crudField label{
+	text-align: left;
+}
+.crud_boolean{
+	height:40px;
+}
+*+html .crud_boolean{
+	height:auto;
+}
+.crud_relation{
+	height:40px;
+}
+.crud_relation select{
+	left:45px;
+}
+*+html .crud_relation{
+	height:auto;
+}
+.crud_text{
+	height:auto;
+	left:auto;
+}
+*+html .crud_text{
+	height:auto;
+	left:auto;
+}
+.crud_text input {
+	text-algin:left;
+	left:80px;
+    width:100px;
+}
+.crud_binary{
+	height:auto;
+}
+*+html .crud_binary{
+	height:auto;
+}
+.crud_date {
+	text-algin:left;
+	height:auto;
+}
+*+html .crud_date {
+	text-algin:left;
+	height:auto;
+}
+.crud_longtext{
+	height:120px;
+}
+*+html .crud_longtext{
+	height:120px;
+}
+.crud_date input {
+	margin:0px 0px;
+	height:14px;
+	text-algin:left;
+    width:98px;
+}
+.crud_doubleDate input {
+    width:98px;
+}
+
+.crudField textarea{
+	position: absolute;
+	left:110px;
+}
+.crudField select{
+	position: relative;
+}
+.crudButtons {
+	text-align: left;
+}
+.subButton{
+	position: relative;
+	left:-50px;
+}
+.crudSaveButtons{
+	position: relative;
+	text-align: left;
+	margin: 40px 0px 0px 0px;
+	padding: 0px 0px 20px;
+}
+*+html .crudSaveButtons{
+	text-align: left;
+	margin: 40px 0px 20px 0px;
+	position: relative;
+	
+}
+.crudField .error {
+	position: relative;
+	color: #c00;
+	margin-left:100px;
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align: left;
+	font-size:11px;
+}
+
+.crudField .hasError {
+	color: #c00;
+}
+
+.crudField select[multiple] {
+	max-height: 100px;
+}
+
+.crudField .crudHelp {
+	font-size: 70%;
+	color: #888;
+	display: block;
+	margin-left: 20%;
+	margin-top: 5px;
+}
+
+form .currentAttachment {
+	position: relative;
+	display: block;
+	font-size: 80%;
+	text-align:left;
+	left:-50px;
+	top:20px;
+}
+
+*+html form .currentAttachment {
+	position: relative;
+	display: block;
+	font-size: 80%;
+	text-align:left;
+	left:100px;
+	top:0px;
+}
+
+form .removeAttachment {
+    position: relative;
+    display: block;
+	font-size: 80%;
+	text-align:left;
+	left:100px;
+	top:20px;
+}
+
+*+html form .removeAttachment {
+    position: relative;
+    display: block;
+	font-size: 80%;
+	text-align:left;
+	left:100px;
+	top:0px;
+}
+.removeAttachment input{
+    position: absolute;
+    display: block;
+	font-size: 150%;
+	left:40px;
+}
+
+/** Footer **/
+
+#crud #crudFooter {
+	font-size: 80%;
+	color: #aaa;
+	padding: 10px 20px;
+	border-top: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+	margin-top: 20px;
+}
+
+#crud #crudFooter a {
+	color: #333;
+}
+
+/** Home **/
+
+.crudNew {
+	text-align: right !important;
+}
+
+.crudNew a {
+	background: #54BD06;
+	padding: 2px 10px;
+	font-size: 90%;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	color: #fff !important;
+	text-decoration: none;
+}
+
+.crudNew a:hover {
+	opacity: .8;
+}
+
+/** List **/
+
+#crudList {
+	text-align:center;
+}
+
+#crudListAdd{
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+}
+
+#crudListAdd a {
+	background-image:url(images/anniu_01.png);
+	color:#ffffff;
+	font-size: 120%;
+	font-weight:bold;
+	display:block;
+	width:149px;
+	height:38px;
+	text-align:center;
+	vertical-align:top;
+}
+
+#crudListAdd a:hover {
+	opacity: .8;
+}
+#searchTitle{
+}
+#crudListSearch input[type=image]{
+	height:29px;
+}
+#crudListSearch input[type=text]{
+	width:360px;
+	height:23px;
+	font-size:12px;
+	line-height: 23px;
+}
+#crudListSearch {
+	padding: 10px 0px;
+	text-align:center;
+	clear:both; height:29px; padding:1px; border:1px solid #4cc1f2; width:490px;
+}
+#crudListTitleSearch table{
+	border-collapse:collapse;
+}
+#crudListTitleSearch td{
+	height:30px;
+	background-image:url(images/choose.gif);
+	font-weight: bold;
+	color:#999999;
+}
+#crudListTitleSearch a{
+	font-weight: bold;
+	color:#0099cc;
+}
+#crudListTitleSearch a:hover {
+	color:#ff6600;
+}
+
+#crudListSearch a {
+	color: #111 !important;
+	font-size: 90%;
+}
+
+#crudListPagination {
+	position: relative;
+	padding: 4px 5px;
+	border-top: 0;
+	font-size: 100%;
+}
+#crudListPagination .crudPages {
+	position:relative;
+	text-align:right;
+	color:#1328E8;
+	font-size:12px;
+	font-family:宋体;
+}
+#crudListPagination .crudCount {
+	position:relative;
+	text-align:right;
+}
+
+.crudPages a{
+    color: #000 !important;
+}
+
+/** Show **/
+#crudShow {
+	position: relative;
+	top:8px;
+}
+
+*+html #crudShow {
+	position: relative;
+	top:8px;
+}
+
+.crudDelete input {
+	position: absolute;
+	right: 1px;
+	top:-10px;
+}
+.crudDelete input:hover {
+	opacity: .7;
+}

@@ -33,7 +33,7 @@ public class Poll extends Model {
 	@Index(name = "idx_title")
 	public String title;
 	
-	@MaxSize(500)
+	@MaxSize(800)
 	public String description;
 	
 	public Date expired;
@@ -41,4 +41,8 @@ public class Poll extends Model {
 	@Hidden
 	public Date createDate;
 
+	public String toString() {
+		return title;
+	}
+	
 }
